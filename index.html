@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Reality Behind Gambling</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    /* Reset & base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #121212;
+      color: #E0E0E0;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 3rem 1rem 5rem;
+      scroll-behavior: smooth;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #1f1f1f;
+      padding: 3rem 3.5rem 4rem;
+      border-radius: 10px;
+      box-shadow:
+        0 4px 8px rgba(0,0,0,0.6),
+        inset 0 0 30px #ff6700;
+      border-left: 6px solid #ff6e00;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #FF7F50;
+      text-shadow: 0 0 8px #ff7f50aa;
+      user-select: none;
+    }
+
+    /* Collapsible Buttons */
+    .collapsible {
+      background: #ff6e00;
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 1.25rem 2rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.25rem;
+      font-weight: 600;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      box-shadow: 0 3px 8px #ff6e0033;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .collapsible:hover,
+    .collapsible.active {
+      background: #ff8533;
+      box-shadow: 0 5px 15px #ff853399;
+    }
+
+    /* Content Panels */
+    .content {
+      background: #292929;
+      padding: 1.6rem 2rem;
+      border-radius: 0 0 10px 10px;
+      color: #f0dbb7;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease, padding 0.4s ease;
+      box-shadow: inset 0 0 20px #ff6e0040;
+      margin-bottom: 3rem;
+      white-space: pre-wrap;
+    }
+    .content.show {
+      max-height: 1200px; /* large enough for all text */
+      padding-top: 1.6rem;
+      padding-bottom: 1.6rem;
+    }
+
+    /* Lists inside content */
+    .content ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .content li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* Links styling */
+    a {
+      color: #ffb762;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-weight: 600;
+    }
+    a:hover,
+    a:focus {
+      color: #ffdca0;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .container {
+        padding: 2rem 1.5rem 3rem;
+      }
+      .collapsible {
+        font-size: 1.1rem;
+        padding: 1rem 1.5rem;
+      }
+      .content {
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main" aria-label="Information about gambling dangers">
+    <header>
+      <h1>The Reality Behind Gambling</h1>
+    </header>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section1" id="toggle1">How Casinos Always Win (Kevin)</button>
+    <section id="section1" class="content" aria-hidden="true" tabindex="0">
+      Whenever someone gambles, the house always has the advantage over the players, this is because casinos have a mathematical advantage called the "house edge." No matter what game the player chooses to play, the house always has an advantage over the players. For example, a roulette wheel is numbered from one to 36, so you might think this puts the odds for winning a single number bet at 36 to one. However, roulette wheels also have a zero, and sometimes they have a double zero and even a triple zero. The actual odds of winning are thus 37 to one, 38 to one, or 39 to one, not 36 to one. The house edge when playing American roulette, which uses a roulette wheel with both a zero and a double zero is 5.26 percent. So for every $1 million bet at the roulette tables in a casino, management's profit is slightly more than $50,000, and the remaining $950,000 or so is returned to the bettors. The casino’s goal isn’t to bankrupt the players in one sitting, but to give them some hope to gradually empty their pockets in the long run. Slot machines and other games are also programmed so that the casino profits overall, even if some players win big occasionally.
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section2" id="toggle2">Facts and Statistics</button>
+    <section id="section2" class="content" aria-hidden="true" tabindex="0">
+      <ul>
+        <li>Up to 20 million Americans have gambling problems or are at risk.</li>
+        <li>Slot machines are the most addictive. 75% of problem gamblers play slots.</li>
+        <li>60% of problem gamblers smoke, and 26% are alcoholics.</li>
+        <li>Suicide rates among problem gamblers are 15x higher than the general population.</li>
+        <li>81% of gambling addicts play online.</li>
+        <li>Annual gambling losses in the U.S. exceed $100 billion.</li>
+      </ul>
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section3" id="toggle3">Why Gambling is So Addictive, Causes (Kevin)</button>
+    <section id="section3" class="content" aria-hidden="true" tabindex="0">
+      To prevent gambling addiction, we must first look at the causes of the problem. One of the main causes of this is the way gambling websites and casinos are intentionally designed to be addictive. Gambling websites use tricks such as near wins, flashy visuals to make you spend more money and time gambling. Additionally, the fact that these websites can be accessed anywhere at any time makes them more dangerous and addictive. Casinos, on the other hand, use tricks like removing any clocks and windows, offering you free drinks, and creating an exciting atmosphere to make people lose track of time and their money.<br><br>
+      Another issue is the lack of awareness among young people, because they often don’t realize that these platforms are using psychological manipulation to keep them engaged. Without proper education on how gambling works or its long term consequences, young people may view it as an easy way to make money or just a thrilling game. This lack of understanding increases their risk of developing addictive behaviors early on.
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section4" id="toggle4">Consequences (Kipras)</button>
+    <section id="section4" class="content" aria-hidden="true" tabindex="0">
+      Gambling can lead to serious harm to both physical and mental health. These problems include financial stress, mental illness and even self harm, or worse suicide. Gambling is also tearing families and relationships apart, for every one addicted gambler there’s at least 6 people who suffer with him. These people could have never gambled in their life but are still affected by the consequences that the addict creates. In some families it becomes so bad that the addiction gets transferred down to the addicted person's family or friends which means that the gambling legacy lives on as well as the other family members or friends start affecting their families and friends.
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section5" id="toggle5">Protect Yourself (Kevin)</button>
+    <section id="section5" class="content" aria-hidden="true" tabindex="0">
+      There are multiple ways to protect yourself from gambling or even escape if you have an addiction. The best thing you can do to stop gambling is just talk about it with a person you trust and know they won’t judge you, this can be anyone from a family member to a therapist.<br><br>
+      The next step that you can take to escape gambling is replace it with another hobby. The hobby can be anything you enjoy that is not related to gambling in any way or form. Learning how to relax and keep calm can also help you a lot to quit gambling. There are multiple ways to learn how to keep calm, for instance: regular exercise, eating healthy or even just getting enough sleep.<br><br>
+      Now let’s talk about how not to fall into the addictive loop of gambling in the first place. The best thing that you can do for yourself to not become addicted is to avoid gambling venues and casinos in general, even if it’s just chatting with a friend or socializing. If you can’t stop yourself from going to them, there is another way to prevent yourself from losing it all, not using credit cards, taking out loans or betting anything that is not money. This can help you not lose everything even if you are addicted since it limits you and your spendings, meaning that you can’t lose it all.
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section6" id="toggle6">Conclusion</button>
+    <section id="section6" class="content" aria-hidden="true" tabindex="0">
+      In conclusion there are many things you can do to stop yourself from gambling or even stop gambling if you are addicted. So if you see yourself going down the slippery slope a simple call or search can help you keep your things and life.
+    </section>
+
+    <button class="collapsible" aria-expanded="false" aria-controls="section7" id="toggle7">Help and Resources</button>
+    <section id="section7" class="content" aria-hidden="true" tabindex="0">
+      <ul>
+        <li>World Health Organization: WHO. (2024, 2 December). Gambling. <a href="https://www.who.int/news-room/fact-sheets/detail/gambling#:~:text=Gambling%20can%20lead%20to%20serious,one%27s%20life%20and%20transmit%20intergenerationally." target="_blank" rel="noopener noreferrer">https://www.who.int/news-room/fact-sheets/detail/gambling</a></li>
+        <li>What are the consequences of problem gambling? (n.d.). Default. <a href="https://www.ncpg.org.sg/learn-more/about-problem-gambling/what-are-the-consequences-of-problem-gambling" target="_blank" rel="noopener noreferrer">https://www.ncpg.org.sg/learn-more/about-problem-gambling/what-are-the-consequences-of-problem-gambling</a></li>
+        <li>1-800-GAMBLER is a national helpline number that you can call if you need help with your addiction.</li>
+      </ul>
+    </section>
+  </div>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+
+    collapsibles.forEach(button => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+        // Toggle aria attributes
+        button.setAttribute("aria-expanded", !isExpanded);
+        content.setAttribute("aria-hidden", isExpanded);
+
+        // Toggle active class and content show
+        button.classList.toggle("active");
+        content.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
+</html>
